@@ -1,0 +1,12 @@
+@mixin font ($fontsize, $lineheight, $fontweight) {
+  font-size: $fontsize;
+  line-height: $lineheight;
+  font-weight: $fontweight;
+}
+
+@mixin stylenone() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}

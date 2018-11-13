@@ -3,259 +3,154 @@
   <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>HTML Academy: Мишка</title>
+    <title>IGOL</title>
     <link href="css/style.min.css" rel="stylesheet">
     <script src="js/picturefill.min.js"></script>
   </head>
   <body>
-    <div style="display: none">
-      <include src="build/img/sprite.svg"></include>
-    </div>
-    <div class="center-wrapper">
-      <header class="page-header">
-        <a href="index.html" class="page-header__logo">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img src="img/logo-mobile.svg" alt="Мишка">
-          </picture>
-        </a>
-        <a class="page-header__toggle" href="">
-          <svg width="19.958px" height="14px">
-            <use xlink:href="#icon-menu-open"></use>
-          </svg>
-        </a>
-        <a class="page-header__toggle page-header__toggle-close" href="">
-          <svg width="19.958px" height="14px">
-            <use xlink:href="#icon-menu-close"></use>
-          </svg>
-        </a>
-<!--Классы page-header__toggle-close и page-header__toggle будут переключать гамбургер на крестик-->
-        <div class="page-header__site-list page-header__site-list--order1">
-          <a class="page-header__link link" href="catalog.html">Каталог товаров</a>
-        </div>
-        <div class="page-header__site-list page-header__site-list--order2">
-          <a class="page-header__link link" href="form.html">Вязание на заказ</a>
-        </div>
-        <div class="page-header__site-list page-header__site-list--order3">
-          <a class="page-header__link page-header__link--search link" href="">
-            <svg class="page-header__search" width="17.6px" height="17.6px">
-              <use xlink:href="#icon-search"></use>
-            </svg>
-            <p class="page-header__link-hidden">Поиск по сайту</p>
-          </a>
-        </div>
-        <div class="page-header__site-list page-header__site-list--order4">
-          <a class="page-header__link  page-header__link--basket link" href="#">
-            <svg class="page-header__cart" width="20.294px" height="18.849px">
-              <use xlink:href="#icon-cart"></use>
-            </svg>
-            Корзина: пока пуста
-          </a>
-        </div>
-        <div class="page-header__site-list page-header__site-list--order5">
-          <a class="page-header__link page-header__link--desktop link" href="#">Новые поступления</a>
-        </div>
-        <div class="page-header__site-list page-header__site-list--order6">
-          <a class="page-header__link page-header__link--desktop link" href="#">Распродажа</a>
-        </div>
-        <div class="page-header__site-list page-header__site-list--order7">
-          <a class="page-header__link page-header__link--tablet link" href="#">Бесплатная доставка по России</a>
-        </div>
-      </header>
-      <section class="product-category">
-        <h2 class="visually-hidden">Категории продуктов</h2>
-        <div class="product-category__img"></div>
-        <header class="product-category__header">
-          <p class="product-category__title"> Милые штуки ручной<br>работы для дома</p>
-        </header>
-        <div class="product-category__wrapper">
-          <a href="" class="product-category__link link">
-            <div class="product-category__interior">
-              <p class="product-category__text">Предметы интерьера</p>
-            </div>
-          </a>
-          <a href="" class="product-category__link link">
-            <div class="product-category__toys">
-              <p class="product-category__text">Детские игрушки</p>
-            </div>
-          </a>
-        </div>
-      </section>
-      <section class="popular-product">
-        <h2 class="visually-hidden">Товар недели</h2>
-        <div class="popular-product__flex">
-          <header class="popular-product__header">Вязаные корзинки</header>
-          <p class="popular-product__time">Товар недели</p>
-        </div>
-        <div class="popular-product__wrapper">
-          <p class="popular-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <table class="popular-product__property">
-            <tr>
-              <td class="popular-product__string">Цвет:</td>
-              <td class="popular-product__string">&#171;Тиффани&#187;/серый</td>
-            </tr>
-            <tr>
-              <td class="popular-product__string">Диаметр:</td>
-              <td class="popular-product__string">25 см</td>
-            </tr>
-            <tr>
-              <td class="popular-product__string">Высота:</td>
-              <td class="popular-product__string">15 см</td>
-            </tr>
-          </table>
-          <div class="popular-product__wrapper-img">
-            <picture>
-              <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+    <div class="wrapper">
+      <div class="container">
+        <h1 class="visually-hidden">IGOL</h1>
 
-              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-              <img class="popular-product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Товар недели">
-            </picture>
-          </div>
-          <p class="popular-product__price">Цена: 990 руб.</p>
-          <a class="popular-product__button button" href="popular-product.html">Заказать</a>
-        </div>
-      </section>
-      <section class="advantages">
-        <h2 class="advantages__title">Коротко о нас:</h2>
-        <div class="advantages__list">
-          <div class="advantages__wrapper">
-            <div class="advantages__item">
-              <svg class="advantages__svg" width="31.972px" height="37.301px">
-                <use xlink:href="#icon-feature-flower"></use>
-              </svg>
-              <p>Экологически<br class="advantages__hidden"> чистые материалы</p>
-            </div>
-            <div class="advantages__item">
-              <svg class="advantages__svg" width="46.575px" height="27.332px">
-                <use xlink:href="#icon-feature-money"></use>
-              </svg>
-              <p>Скандинавский стиль<br>по российской цене</p>
-            </div>
-            <div class="advantages__item">
-              <svg class="advantages__svg" width="33.05px" height="27.857px">
-                <use xlink:href="#icon-feature-heart"></use>
-              </svg>
-              <p>Увеличивает лайки<br>на фотографиях</p>
-            </div>
-          </div>
-          <div class="advantages__wrapper">
-            <div class="advantages__item">
-              <svg class="advantages__svg" width="34.373px" height="34.373px">
-                <use xlink:href="#icon-feature-ball"></use>
-              </svg>
-              <p>Связано вручную с<br>любовью и умилением</p>
-            </div>
-            <div class="advantages__item" class="advantages__item">
-              <svg class="advantages__svg" width="54.156px" height="23.183px">
-                <use xlink:href="#icon-feature-rocket"></use>
-              </svg>
-              <p>Поддержка отечественного производителя</p>
-            </div>
-            <div class="advantages__item">
-              <svg class="advantages__svg" width="32.666px" height="32.486px">
-                <use xlink:href="#icon-feature-gift"></use>
-              </svg>
-              <p>Поставляется в<br>подарочной упаковке</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="comments">
-        <h2 class="comments__title">Отзывы</h2>
-        <p class="comments__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии , я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-        <div class="comments__wrapper">
-          <div class="comments__wrapper-autor">
-            <p class="comments__autor">Анастасия Красильникова</p>
-            <p class="comments__email">@misssssiskras</p>
-          </div>
-          <div class="comments__button-wrapper">
-            <button class="comments__prev" type="button">
-              <svg width="50px" height="26.003px">
-                <use xlink:href="#icon-left-arrow"></use>
-              </svg>
-            </button>
-            <button class="comments__next" type="button">
-              <svg width="50px" height="26.003px">
-                <use xlink:href="#icon-right-arrow"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <button class="comments__button button" type="button">Написать</button>
-      </section>
-      <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <section class="contacts__table">
-          <h3 class="visually-hidden">e-mail</h3>
-          <div class="contacts__wrapper">
-            <p class="contacts__adress-name">e-mail:</p>
-            <p class="contacts__adress contacts__adress--underline">info@mimimishkashop.ru</p>
-          </div>
-          <div class="contacts__wrapper">
-            <p class="contacts__adress-name">адрес:</p>
-            <p class="contacts__adress">г. Санкт-Петербург,<br>ул. Большая<br class="contacts__hidden"> Конюшенная,<br>д. 19/8, офис 101</p>
-          </div>
+        <section class="banner">
+          <h2 class="banner__title">Как этот товар сочетается с другими в квартире?</h2>
+          <p class="banner__text">Постройте интерьер, выберите материалы и узнайте стоимость ремонта</p>
+          <button class="banner__button button">Построить интерьер</button>
+          <button class="banner__close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20.514" height="20.512"><path fill="#231F20" d="M20.513 1.414L19.099 0l-8.843 8.842L1.414 0 0 1.414l8.842 8.842L0 19.098l1.414 1.414 8.842-8.842 8.843 8.842 1.414-1.414-8.842-8.842z"/></svg>
+          </button>
         </section>
-        <iframe src="https://yandex.ru/map-widget/v1/-/CBBsjMuVwA" height="457" class="contacts__map"></iframe>
-        <button class="contacts__button button" type="button">Напишите нам</button>
-      </section>
-      <footer class="footer">
-        <svg width="101.615px" height="34.056px" class="footer__logo" width="50px" height="26.003px">
-          <use xlink:href="#logo-footer"></use>
-        </svg>
-        <div class="footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--instagram link" href="https://www.instagram.com/htmlacademy">
-                <p class="visually-hidden">Мы в Инстаграме</p>
-                <svg width="21.769px" height="21.334px">
-                  <use xlink:href="#icon-insta"></use>
+
+        <section class="main-product">
+          <h2 class="main-product__title">Ванна асимметричная BELBAGNO Акрил Белый Голд 150x80</h2>
+          <img src="img/main-image.png" width="367" height="267" alt="Ванна асимметричная BELBAGNO">
+          <div class="main-product__galary">
+            <img src="img/main-image.png" width="67" height="67" alt="Ванна асимметричная BELBAGNO">
+            <img src="img/main-image.png" width="67" height="67" alt="Ванна асимметричная BELBAGNO">
+            <img src="img/main-image.png" width="67" height="67" alt="Ванна асимметричная BELBAGNO">
+          </div>
+          <div class="main-image__wrapper">
+            <span class="main-product__article">Артикул: 5266 EAN:16491846</span>
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <div class="main-product__size">
+                <select id="size" name="size">
+                  <option value="150 X 80">Размер<br>150X80</option>
+                  <option value="130 X 80">130X80</option>
+                  <option value="120 X 80">120X80</option>
+                  <option value="110 X 80">110X80</option>
+                </select>
+              </div>
+              <div class="main-product__color">
+                <select id="color" name="color">
+                  <option value="white">Цвет<br>белый</option>
+                  <option value="green">зеленый</option>
+                  <option value="blue">синий</option>
+                  <option value="red">красный</option>
+                </select>
                 </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook link" href="https://www.facebook.com/htmlacademy">
-                <p class="visually-hidden">Мы в Фейсбуке</p>
-                <svg class="social__svg" width="14.962px" height="27.718px">
-                  <use xlink:href="#icon-fb"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--twitter link" href="https://twitter.com/htmlacademy_ru">
-                <p class="visually-hidden"> Мы в Твиттере</p>
-                <svg width="23.494px" height="20.168px">
-                  <use xlink:href="#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+              </div>
+            </form>
+            <a class="main-product__link" href="#">Все варианты исполнения</a>
+            <p class="main-product__text">Рекомендуемая толщина слоя: 5-15 мм</p>
+            <p class="main-product__text">Расход смеси: на 1 м² кладки (шов 10мм, кладка в 1/2 кирпича) — 50 кг</p>
+            <p class="main-product__text">Расход смеси при слое 1 мм: 2 кг/м²</p>
+            <p class="main-product__text">Количество на поддоне: 60 шт.</p>
+            <p class="main-product__text">Производитель: Россия</p>
+            <p class="main-product__text">Вес брутто: 25 кг</p>
+            <a class="main-product__link" href="#">Все характеристики</a>
+          </div>
+          <div class="main-product__wrapper">
+            <table>
+              <tr>
+                <td>Цена за комплект</td>
+                <td>13 456 ₽<span>−20%</span></td>
+              </tr>
+              <tr>
+                <td>Плитка настенная KERAMA …</td>
+                <td>999 ₽</td>
+              </tr>
+              <tr>
+                <td>Смеситель Aquanica</td>
+                <td>3499 ₽</td>
+              </tr>
+              <tr>
+                <td>Раковина Aquanica 100×200</td>
+                <td>8958 ₽</td>
+              </tr>
+            </table>
+            <a href="">Скрыть</a>
+            <p>КИН холдинг</p>
+            <p>Доставка 2 дня от 100 ₽</p>
+            <p>Самовывоз из 3 точек</p>
+            <button>В корзину</button>
+          </div>
+          <a href="">Посмотреть еще 3 предложения</a>
+        </section>
+
+        <div class="catalog">
+          <h2 class="catalog__title">Популярные комплекты с этим товаром</h2>
+          <section class="catalog__product">
+            <div class="catalog__galary">
+              <img src="img/main-image.png" width="67" height="67" alt="Ванна асимметричная BELBAGNO">
+              <img src="img/main-image.png" width="67" height="67" alt="Ванна асимметричная BELBAGNO">
+              <img src="img/main-image.png" width="67" height="67" alt="Ванна асимметричная BELBAGNO">
+            </div>
+            <table>
+              <tr>
+                <td>Плитка настенная KERAMA MARAZZI Марчиана 200×200</td>
+                <td>999 ₽</td>
+              </tr>
+              <tr>
+                <td>Смеситель Aquanica 120×240</td>
+                <td>5 999 ₽</td>
+              </tr>
+              <tr>
+                <td>140×240</td>
+                <td>6 199 ₽</td>
+              </tr>
+              <tr>
+                <td>145×250</td>
+                <td>6 199 ₽</td>
+              </tr>
+              <tr>
+                <td>Раковина Aquanica 100×200</td>
+                <td>4 999 ₽</td>
+              </tr>
+              <tr>
+                <td>Полупьедестал Aquanica 200×100</td>
+                <td>3 999 ₽</td>
+              </tr>
+            </table>
+            <p>КИН холдинг</p>
+            <p><span>Цена без скидки: 13 456 ₽</span><br>Cпецпредложение<span>−20%</span>11 999 ₽</p>
+            <button class="catalog__button button">Выбрать и настроить комплект</button>
+          </section>
+          <section class="catalog__product">
+            <div class="catalog__galary">
+              <img src="img/main-image.png" width="67" height="67" alt="Ванна асимметричная BELBAGNO">
+              <img src="img/main-image.png" width="67" height="67" alt="Ванна асимметричная BELBAGNO">
+              <img src="img/main-image.png" width="67" height="67" alt="Ванна асимметричная BELBAGNO">
+            </div>
+            <table>
+              <tr>
+                <td>Плитка настенная KERAMA MARAZZI Марчиана 200×200</td>
+                <td>999 ₽</td>
+              </tr>
+              <tr>
+                <td>Смеситель Aquanica</td>
+                <td>5 999 ₽</td>
+              </tr>
+                <td>Раковина Aquanica 100×200</td>
+                <td>4 999 ₽</td>
+              </tr>
+            </table>
+            <p>Сантехника для дома</p>
+            <p>7 999 ₽</p>
+            <button class="catalog__button button">Выбрать и настроить комплект</button>
+          </section>
+          <a href="">Показать еще 10 комплектов</a>
         </div>
-        <div class="footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg width="26.943px" height="34.09px">
-              <use xlink:href="#logo-htmlacademy"></use>
-            </svg>
-          </a>
-        </div>
-      </footer>
-      <section class="modal-order">
-        <h2 class="modal-order__title">Добавить в корзину</h2>
-        <p class="modal-order__text">Выберите размер:</p>
-        <div class="modal-order__wrapper">
-          <div class="modal-order__size">S</div>
-          <div class="modal-order__size">M</div>
-          <div class="modal-order__size">L</div>
-        </div>
-        <button class="modal-order__button button" type="button">Заказать</button>
-      </section>
+      </div>
     </div>
-    <div class="overlay"></div>
-    <script src="js/script.min.js"></script>
   </body>
 </html>
