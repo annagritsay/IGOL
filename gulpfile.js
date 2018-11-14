@@ -64,7 +64,7 @@ gulp.task("html", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-    "source/fonts/**/*.{otf}",
+    "source/fonts/**/*.otf",
     "source/img/**",
     "source/js/**"
     ], {

@@ -1,0 +1,18 @@
+.table {
+  @include font (0.9rem, 1.3rem, 400);
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  color: #737373;
+}
+
+.table__column {
+  @include font (0.9rem, 1.3rem, 400);
+  width: 30%;
+  text-align: right;
+}
+
+.table__min {
+  @include font (0.7rem, 0.8rem, 400);
+}
+

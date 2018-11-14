@@ -1,0 +1,111 @@
+.main-product {
+  background-color: white;
+}
+
+.main-product__title {
+    @include stylenone();
+    @include font (1.4rem, 2rem, 700);
+    padding: 30px;
+    background-color: $lightblue;
+    box-shadow: 0 0 10px 10px rgba(247, 250, 252, 0.7);
+}
+
+.main-product__article {
+    @include stylenone();
+    @include font (0.6rem, 1.5rem, 400);
+    padding-left: 20px;
+}
+
+.main-product__img-wrapper {
+  background-color: white;
+  display: flex;
+  margin: 10px auto;
+  flex-direction: column;
+  box-shadow: 0 0 20px 40px rgba(255, 255, 255, 0.7);
+}
+
+.main-product__img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.main-product__galary {
+  padding: 30px;
+}
+
+.main-product__wrapper {
+  padding: 0 30px;
+}
+
+.main-product__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-product__text {
+  @include stylenone();
+  @include font (0.9rem, 1.4rem, 400);
+}
+
+.main-product__link {
+  padding: 0 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-product__img-wrapper {
+    box-shadow: none;
+    width: 300px;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .main-product__img {
+    margin: 0;
+  }
+
+  .main-product__contenier {
+    width: 350px;
+  }
+
+  .main-product__flex-conteiner {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    padding: 0 50px;
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.7);
+  }
+
+  .main-product__wrapper {
+    width: 350px;
+    box-sizing: border-box;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-product__title {
+    padding-left: 500px;
+}
+
+  .main-product__contenier {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+  }
+
+  .main-product__flex-conteiner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    padding: 0 50px;
+    padding-left: 500px;
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.7);
+  }
+
+}
+

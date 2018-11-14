@@ -19,22 +19,28 @@
   src: url("../fonts/GraphikLCG-Bold.otf");
 }
 
+html {
+  @include font (16px, 32px, 400);
+}
+
 body {
-  min-width: 320px;
   background: #ffffff;
   font-family: "GraphikLCG", "Arial", sans-serif;
   box-sizing: border-box;
   margin: 0;
-  font-weight: 400;
+  color: #373737;
 }
 
 .wrapper {
-  width: 100%;
-  background-color: $lightblue;
+  background-color: white;
   display: flex;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .container {
+  width: 100%;
+  box-sizing: border-box;
   margin: 0 auto;
 }
 

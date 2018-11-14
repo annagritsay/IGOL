@@ -28,7 +28,7 @@
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
+    "stylelint": "stylelint \"source/scss/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "gulp start"
@@ -44,7 +44,7 @@
     "source/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
-    "source/less/**/*.less"
+    "source/scss/**/*.scss"
   ],
   "engines": {
     "node": "8.12"
