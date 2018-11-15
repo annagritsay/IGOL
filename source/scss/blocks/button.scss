@@ -1,7 +1,7 @@
 .button {
-  @include stylenone();;
+  @include stylenone();
   @include font (0.8rem, 1rem, 400);
-  padding: 10px 20px 10px 50px;
+  padding: 15px 20px 15px 50px;
   width: 200px;
   box-sizing: border-box;
   background-color: $pink;

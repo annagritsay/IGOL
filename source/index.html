@@ -24,16 +24,19 @@
         <section class="main-product">
           <h2 class="main-product__title">Ванна асимметричная BELBAGNO Акрил Белый Голд 150x80<span class="main-product__article">Артикул: 5266 EAN:16491846</span></h2>
           <div class="main-product__flex-conteiner">
+
             <div class="main-product__contenier">
-              <div class="main-product__img-wrapper">
+              <picture class="main-product__img-wrapper">
+                <source media="(min-width: 1200px)" srcset="img/main-image.png">
                 <img class="main-product__img" src="img/main-image.png" width="240" height="167" alt="Ванна асимметричная BELBAGNO">
-              </div>
+              </picture>
               <div class="main-product__galary">
                 <img class="main-product__galary-item" src="img/item8.png" width="67" height="57" alt="Ванна асимметричная BELBAGNO">
                 <img class="main-product__galary-item" src="img/item9.png" width="67" height="57" alt="Ванна асимметричная BELBAGNO">
                 <img class="main-product__galary-item" src="img/item6.png" width="67" height="57" alt="Ванна асимметричная BELBAGNO">
               </div>
             </div>
+
             <div class="main-product__wrapper">
               <form class="main-product__form" action="https://echo.htmlacademy.ru" method="get">
                 <div class="main-product__size size">
@@ -68,6 +71,7 @@
               <p class="main-product__text">Вес брутто: 25 кг</p>
               <a class="link" href="#">Все характеристики</a>
             </div>
+
             <div class="main-product__flex-desktop">
               <div class="main-product__wrapper2 discription">
                 <div class="discription__first-line">
@@ -98,12 +102,15 @@
               </div>
               <a class="main-product__link link" href="">Посмотреть еще 3 предложения</a>
             </div>
+
           </div>
         </section>
+
 
         <div class="catalog">
           <h2 class="catalog__title">Популярные комплекты с этим товаром</h2>
           <div class="catalog__wrapper">
+
             <section class="catalog__discription discription">
               <div class="discription__galary">
                 <img src="img/item1.png" width="67" height="67" alt="Плитка">
@@ -137,8 +144,11 @@
                   </tr>
                 </table>
                 <div class="discription__wrapper">
-                  <p>КИН холдинг</p>
-                  <p><span>Цена без скидки: 13 456 ₽</span><br>Cпецпредложение<span>−20%</span>11 999 ₽</p>
+                  <p class="discription__kinholding">КИН холдинг</p>
+                  <div>
+                    <span class="discription__price">Цена без скидки: 13 456 ₽</span>
+                    <p>Cпецпредложение<span class="discription__sale discription__sale-one">−20%</span><span class="discription__price-sale"> 11 999 ₽</span></p>
+                  </div>
                 </div>
                 <button class="discription__button-catalog button">Выбрать и настроить комплект</button>
             </section>
@@ -163,7 +173,7 @@
                   </tr>
                 </table>
                 <div class="discription__wrapper">
-                  <p>Сантехника для дома</p>
+                  <p class="discription__house">Сантехника для дома</p>
                   <p>7 999 ₽</p>
                 </div>
                 <button class="discription__button-catalog button">Выбрать и настроить комплект</button>

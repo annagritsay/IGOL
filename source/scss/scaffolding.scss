@@ -24,9 +24,10 @@ html {
 }
 
 body {
+  min-width: 375px;
+  box-sizing: border-box;
   background: #ffffff;
   font-family: "GraphikLCG", "Arial", sans-serif;
-  box-sizing: border-box;
   margin: 0;
   color: #373737;
 }
@@ -39,9 +40,20 @@ body {
 }
 
 .container {
+  position: relative;
   width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    background-color: $lightblue;
+  }
+
+  .container {
+    max-width: 1264px;
+  }
 }
 
 .visually-hidden:not(:focus):not(:active),

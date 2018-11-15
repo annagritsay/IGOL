@@ -40,18 +40,21 @@
     width: 20px;
     height: 19px;
     left: 30px;
-    bottom: 9px;
+    bottom: 14px;
   }
 
     &::after {
     content: "";
     position: absolute;
     background-image: url("../img/hard.svg");
+    background-color: rgba(115, 115, 115, 0.1);
+    padding: 7px;
     background-repeat: no-repeat;
+    background-position: center;
     width: 24px;
     height: 24px;
     left: 220px;
-    bottom: 9px;
+    bottom: 5px;
   }
 }
 
@@ -89,9 +92,63 @@
   border-top: 2px solid #eaeaea;
 }
 
+.discription__wrapper {
+  margin-top: auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  @include font (0.7rem, 1.2rem, 400);
+}
+
+.discription__kinholding {
+  position: relative;
+  padding-left: 30px;
+
+  &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/car.svg");
+      background-repeat: no-repeat;
+      width: 24px;
+      height: 24px;
+      left: 0;
+      bottom: 0;
+  }
+}
+
+.discription__house {
+  position: relative;
+  padding-left: 30px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/loupe.svg");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.discription__price {
+  @include font (0.7rem, 1rem, 400);
+}
+
+.discription__sale-one {
+  right: 45px;
+  bottom: 15px
+}
+
+.discription__price-sale {
+  padding-left: 40px;
+}
 
 @media (min-width: $tablet-width) {
   .discription {
+    margin: 20px 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -104,7 +161,8 @@
 
 @media (min-width: $desktop-width) {
   .discription {
-    width: 300px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .discription__table {

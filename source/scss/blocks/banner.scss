@@ -4,12 +4,53 @@
 
 @media (min-width: $desktop-width) {
   .banner {
-  display: block;
-  width: 700px;
-  box-sizing: border-box;
-  margin: 30px 100px;
-  box-shadow: 0 1px 3px 0 rgba(115, 115, 115, 0.25);
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    background-color: white;
+    width: 1264px;
+    box-sizing: border-box;
+    box-shadow: 0 30px 70px 40px rgba(100, 149, 237, 0.1);
+    z-index: 3;
+    border-radius: 10px;
+    padding: 30px;
+  }
+
+  .banner__title {
+    @include stylenone();
+    @include font (1.4rem, 2rem, 400);
+  }
+
+  .banner__text {
+    @include stylenone();
+    @include font (0.9rem, 2rem, 400);
+    padding-bottom: 5px;
+  }
+
+  .banner__close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    opacity: 0.5;
+    border-radius: 15px;
+    transform: scale(0.6);
+    border: 0;
+  }
+
+  .banner__button {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/div.svg");
+      background-repeat: no-repeat;
+      width: 24px;
+      height: 24px;
+      left: 15px;
+      bottom: 5px;
+    }
   }
 }
-
-
